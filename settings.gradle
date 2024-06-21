@@ -5,17 +5,17 @@ buildscript {
             exclude group: "biz.aQute.bnd", module: "biz.aQute.bnd"
         }
         classpath group: "net.saliman", name: "gradle-properties-plugin", version: "1.4.6"
-        classpath group: "com.liferay.portal.tools", name: "com.liferay.portal.tools.bundle.support", version: "3.5.1"
     }
 
     repositories {
         maven {
             url "https://repository-cdn.liferay.com/nexus/content/groups/public"
         }
-
         maven {
             url "https://repository.liferay.com/nexus/content/groups/public"
         }
+        mavenCentral()
+        jcenter()
     }
 }
 
