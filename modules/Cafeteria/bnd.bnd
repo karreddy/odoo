@@ -1,0 +1,4 @@
+Bundle-Name: Cafeteria
+Bundle-SymbolicName: com.cafeteria
+Bundle-Version: 1.0.0
+Export-Package: com.cafeteria.constants
