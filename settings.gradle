@@ -20,7 +20,4 @@ buildscript {
 }
 
 apply plugin: "net.saliman.properties"
-//apply plugin: "com.liferay.workspace"
-
-//include ':theme'
-
+apply plugin: "com.liferay.workspace"
