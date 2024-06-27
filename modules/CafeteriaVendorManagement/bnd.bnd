@@ -1,0 +1,4 @@
+Bundle-Name: CafeteriaVendorManagement
+Bundle-SymbolicName: com.cafeteriaVendorManagement
+Bundle-Version: 1.0.0
+Export-Package: com.cafeteriaVendorManagement.constants
