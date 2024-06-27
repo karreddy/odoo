@@ -1,0 +1,19 @@
+dependencies {
+	compile project(":modules:plng-common-schema:plng-common-schema-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileInclude group: 'org.apache.poi', name: 'poi', version: '4.1.2'
+	compileInclude group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+	compileInclude group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+	compileInclude group: 'org.apache.xmlbeans', name: 'xmlbeans', version: '3.1.0'
+	
+	implementation group: 'org.springframework', name: 'spring-context-support', version: '3.1.0.RELEASE'
+	compile group: 'commons-io', name: 'commons-io', version: '2.6'
+	implementation 'com.sun.mail:javax.mail:1.6.2'
+}
+
+buildService {
+	apiDir = "../plng-common-schema-api/src/main/java"
+}
+
+group = "com.plng.common.schema"

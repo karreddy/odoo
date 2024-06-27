@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<custom-sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.allClosedBill">
+        <![CDATA[
+      SELECT  pbi.*
+		FROM pll_lrdb.Plng_BillInitiation pbi
+		JOIN pll_lrdb.Plng_BillWatchStatus pbws ON pbi.billInitiationUniqueId = pbws.billInitiationUniqueId
+		WHERE pbi.modifiedDate LIKE ?
+		  AND pbws.status =4 AND pbi.status != 'Closed Without UTR'
+		ORDER BY pbi.modifiedDate DESC;
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.financePending">
+        <![CDATA[
+       SELECT  pbi.*
+		FROM pll_lrdb.Plng_BillInitiation pbi
+		JOIN pll_lrdb.Plng_BillWatchStatus pbws ON pbi.billInitiationUniqueId = pbws.billInitiationUniqueId
+		WHERE pbws.assignedUser = ? 
+		  AND pbws.status =3 AND pbi.status != 'Closed Without UTR'
+		  AND pbws.billInitiationUniqueId = ?
+		ORDER BY pbi.modifiedDate DESC;
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.countAllAcceptBills">
+        <![CDATA[
+       SELECT count(*)
+		FROM pll_lrdb.Plng_BillInitiation pbi
+		JOIN pll_lrdb.Plng_BillWatchStatus pbws ON pbi.billInitiationUniqueId = pbws.billInitiationUniqueId
+		WHERE pbws.assignedUser = ? 
+		  AND pbws.status IN (2, 6, 7, 9, 0, 1)
+		ORDER BY pbi.modifiedDate DESC;
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.allAcceptBills">
+        <![CDATA[
+       SELECT pbi.*
+		FROM pll_lrdb.Plng_BillInitiation pbi
+		JOIN pll_lrdb.Plng_BillWatchStatus pbws ON pbi.billInitiationUniqueId = pbws.billInitiationUniqueId
+		WHERE pbws.assignedUser = ? 
+		  AND pbws.status IN (2, 6, 7, 9, 0, 1)
+		ORDER BY pbi.modifiedDate DESC;
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.allPendingBillsCount">
+        <![CDATA[
+       SELECT count(*)
+		FROM pll_lrdb.Plng_BillInitiation pbi
+		JOIN pll_lrdb.Plng_BillWatchStatus pbws ON pbi.billInitiationUniqueId = pbws.billInitiationUniqueId
+		WHERE pbws.assignedUser = ? 
+		  AND pbws.status =3 AND pbi.status != 'Closed Without UTR'
+		ORDER BY pbi.modifiedDate DESC;
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.allPendingBills">
+        <![CDATA[
+       SELECT pbi.*
+		FROM pll_lrdb.Plng_BillInitiation pbi
+		JOIN pll_lrdb.Plng_BillWatchStatus pbws ON pbi.billInitiationUniqueId = pbws.billInitiationUniqueId
+		WHERE pbws.assignedUser = ? 
+		  AND pbws.status =3 AND pbi.status != 'Closed Without UTR'
+		ORDER BY pbi.modifiedDate DESC;
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.countAllPendingBills">
+        <![CDATA[
+         SELECT COUNT(*)
+                FROM pll_lrdb.Plng_BillInitiation bi
+                WHERE statusFlag = 1 
+                  AND currentlyWith = ? 
+                  AND status != 'Closed Without UTR';
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.BillInitiationFinder.getAllSentBill">
+        <![CDATA[
+         SELECT bi.*
+		 FROM pll_lrdb.Plng_BillInitiation bi
+         JOIN 
+        (SELECT 
+            DISTINCT billInitiationUniqueId 
+        FROM 
+            pll_lrdb.Plng_FileMovementBWS
+        WHERE 
+            sentUserId = ?) fm 
+        	ON bi.billInitiationUniqueId = fm.billInitiationUniqueId
+		ORDER BY 
+    bi.modifiedDate DESC;
+
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.FileMovementBWSFinder.countAllSentBill">
+        <![CDATA[
+          SELECT COUNT(DISTINCT
+			pl.billInitiationUniqueId)
+		FROM
+			pll_lrdb.Plng_FileMovementBWS pl
+		WHERE
+			pl.sentby = ?
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.FileMovementBWSFinder.getAllInvoiceRecievedFinanceBill">
+        <![CDATA[
+            SELECT COUNT(DISTINCT billInitiationUniqueId)
+            FROM pll_lrdb.Plng_FileMovementBWS
+            WHERE ackOnDate BETWEEN ? AND ?
+              AND sentToEmpId IN (
+                  SELECT employeeId
+                  FROM pll_lrdb.Plng_Employeedirectory
+                  WHERE department LIKE '%Finance%'
+              )
+              AND LEFT(billInitiationUniqueId, 2) = ?
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.FileMovementBWSFinder.getAllFinanceBill">
+        <![CDATA[
+        	    SELECT *
+			FROM pll_lrdb.Plng_FileMovementBWS
+			    WHERE ackOnDate BETWEEN ? AND ?
+			      AND sentToEmpId IN (
+			          SELECT employeeId
+			          FROM pll_lrdb.Plng_Employeedirectory
+			          WHERE department LIKE '%Finance%'
+			      )
+			      AND LEFT(billInitiationUniqueId, 2) = ?;
+			
+              
+        ]]>
+	</sql>
+	<sql
+		id="com.plng.common.schema.service.persistence.FileMovementBWSFinder.getFinalStatus">
+        <![CDATA[
+        	 SELECT actiontaken
+			 FROM pll_lrdb.Plng_FileMovementBWS
+			 WHERE billInitiationUniqueId = ?
+			 ORDER BY createDate DESC
+			 LIMIT 1;
+        ]]>
+	</sql>
+</custom-sql>

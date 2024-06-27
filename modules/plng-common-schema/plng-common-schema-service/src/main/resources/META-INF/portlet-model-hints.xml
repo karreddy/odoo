@@ -1,0 +1,1739 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.plng.common.schema.model.Academics">
+		<field name="academicsId" type="long" />
+		<field name="employeeId" type="long" />
+		<field name="employeeName" type="String" />
+		<field name="designation" type="String" />
+		<field name="department" type="String" />
+		<field name="location" type="String" />
+		<field name="acadamicSession" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.AcademicsFiles">
+		<field name="academicsFilesId" type="long" />
+		<field name="childName" type="String" />
+		<field name="academicsId" type="long" />
+		<field name="course" type="String" />
+		<field name="discipline" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="university" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="courseDuration" type="String" />
+		<field name="marksObtained" type="String" />
+		<field name="marksOutOf" type="String" />
+		<field name="obtainedPercentage" type="String" />
+		<field name="cgpa" type="String" />
+		<field name="cgpaOutOf" type="String" />
+		<field name="courseType" type="String" />
+		<field name="recogUniversity" type="String" />
+		<field name="aicte" type="String" />
+		<field name="marksheetFileName" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="marksheet" type="long" />
+		<field name="photoFileName" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="photo" type="long" />
+		<field name="amount" type="long" />
+		<field name="status" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.Action">
+		<field name="act_id" type="long" />
+		<field name="action" type="String" />
+		<field name="act_status" type="String" />
+		<field name="id" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.ActionBillWatch">
+		<field name="actionBillWatchId" type="long" />
+		<field name="actionId" type="int" />
+		<field name="action" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.AdditionalDocuments">
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="additionalDocumentId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="applicationNo" type="long" />
+		<field name="profilePicFileEntryId" type="long" />
+		<field name="signatureFileEntryId" type="long" />
+		<field name="resumeFileEntryId" type="long" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.ApplicantWorkDetails">
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="applicantWorkDetailId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="applicationNo" type="long" />
+		<field name="organisationName" type="String" />
+		<field name="industryNature" type="String" />
+		<field name="currentDesignation" type="String" />
+		<field name="designationOnJoiningDate" type="String" />
+		<field name="dateOfJoining" type="Date" />
+		<field name="dateOfLeaving" type="Date" />
+		<field name="supervisorDesignation" type="String" />
+		<field name="dutiesBrief" type="String" />
+		<field name="isCurrentCompany" type="Boolean" />
+		<field name="companyDocsFileEntryId" type="long" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.AppRegistration">
+		<field name="uuid" type="String" />
+		<field name="appId" type="long" />
+		<field name="jobId" type="String" />
+		<field name="saluation" type="String" />
+		<field name="fname" type="String" />
+		<field name="mname" type="String" />
+		<field name="lname" type="String" />
+		<field name="dob" type="Date" />
+		<field name="age" type="String" />
+		<field name="mobile" type="String" />
+		<field name="email" type="String" />
+		<field name="father_name" type="String" />
+		<field name="gender" type="String" />
+		<field name="pll_emp" type="String" />
+		<field name="pll_empid" type="int" />
+		<field name="pll_grade" type="String" />
+		<field name="submitted_at" type="Date" />
+		<field name="submitted_on" type="String" />
+		<field name="txtPAddress" type="String" />
+		<field name="txtPAddress2" type="String" />
+		<field name="txtPDistrict" type="String" />
+		<field name="ddlPStates" type="String" />
+		<field name="txtPPincode" type="String" />
+		<field name="txtCAddress" type="String" />
+		<field name="txtCAddress2" type="String" />
+		<field name="txtCDistrict" type="String" />
+		<field name="txtCPincode" type="String" />
+		<field name="pan" type="String" />
+		<field name="aadhar" type="String" />
+		<field name="category" type="String" />
+		<field name="cctc" type="String" />
+		<field name="ectc" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.ArchieveProvisions">
+		<field name="id" type="long" />
+		<field name="lastArchivedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.BgInitiation">
+		<field name="bgInitiationId" type="long" />
+		<field name="bgInitiationUniqueId" type="String" />
+		<field name="empId" type="long" />
+		<field name="initiatorname" type="String" />
+		<field name="bgtype" type="String" />
+		<field name="amendment" type="long" />
+		<field name="bgissuedate" type="Date" />
+		<field name="bgexpdate" type="Date" />
+		<field name="bgclaimdate" type="Date" />
+		<field name="vendorname" type="String" />
+		<field name="bankname" type="String" />
+		<field name="vendorSapCode" type="String" />
+		<field name="bgno" type="String" />
+		<field name="sfms" type="String" />
+		<field name="currency" type="String" />
+		<field name="amount" type="long" />
+		<field name="remarks" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="eic" type="String" />
+		<field name="eicId" type="long" />
+		<field name="location" type="String" />
+		<field name="forwardedTo" type="String" />
+		<field name="status" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="hold_with" type="long" />
+		<field name="hold_withEmpId" type="long" />
+		<field name="schedule_status" type="String" />
+		<field name="department" type="String" />
+		<field name="forwardToEmployeeId" type="long" />
+		<field name="forwardToEmployeeName" type="String" />
+		<field name="forwardToLiferayUserId" type="long" />
+		<field name="bgreference" type="String" />
+		<field name="senton" type="Date" />
+		<field name="sentfor" type="String" />
+		<field name="name" type="String" />
+		<field name="fileId" type="long" />
+		<field name="bgInCustody" type="String" />
+		<field name="bgReturn" type="String" />
+		<field name="bgFile" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="seq_no" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.BillInitiation">
+		<field name="billInitiationId" type="long" />
+		<field name="billInitiationUniqueId" type="String" />
+		<field name="initiatorEmpId" type="long" />
+		<field name="initiatorEmpName" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="billNo" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="billDate" type="Date" />
+		<field name="totalBillValue" type="float" />
+		<field name="purchaseOrderNo" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="currency" type="String" />
+		<field name="purchaseOrderValue" type="String" />
+		<field name="serviceEntryNo" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="proposalTabID" type="String" />
+		<field name="vendorType" type="String" />
+		<field name="billDueDate" type="Date" />
+		<field name="vendorName" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="vendorContactNo" type="String" />
+		<field name="vendorEmail" type="String" />
+		<field name="lessSDDeductedDetails" type="String" />
+		<field name="lessOtherDeduction" type="String" />
+		<field name="creditNote" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="vendorID" type="long" />
+		<field name="billUploadFileEntryId" type="long" />
+		<field name="scheduledDateOfCompletion" type="Date" />
+		<field name="actualDateofCompletion" type="Date" />
+		<field name="remarks" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="forwardedLocation" type="String" />
+		<field name="department" type="String" />
+		<field name="forwardToEmployeeName" type="String" />
+		<field name="forwardToEmployeeId" type="long" />
+		<field name="forwardToLiferayUserId" type="long" />
+		<field name="currentlyWith" type="long" />
+		<field name="description" type="String" />
+		<field name="utrNo" type="String">
+			<hint name="max-length">600</hint>
+		</field>
+		<field name="lessTDSDeductedDetails" type="String" />
+		<field name="lessLD" type="String" />
+		<field name="paymentDate" type="Date" />
+		<field name="paidAmount" type="float" />
+		<field name="status" type="String" />
+		<field name="initiatorLiferayUserId" type="long" />
+		<field name="bfile" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="holdWith" type="int" />
+		<field name="seqNo" type="int" />
+		<field name="statusFlag" type="int" />
+		<field name="companyId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.BillWatchStatus">
+		<field name="billInitiationUniqueId" type="long" />
+		<field name="assignedUser" type="long" />
+		<field name="assignedFrom" type="long" />
+		<field name="creator" type="long" />
+		<field name="status" type="int" />
+	</model>
+	<model name="com.plng.common.schema.model.BPCLInvestor">
+		<field name="bpclId" type="long" />
+		<field name="firstName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="middleName" type="String" />
+		<field name="lastName" type="String" />
+		<field name="fatherFirstName" type="String" />
+		<field name="fatherMiddleName" type="String" />
+		<field name="fatherLastName" type="String" />
+		<field name="address" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="country" type="String" />
+		<field name="state" type="String" />
+		<field name="district" type="String" />
+		<field name="pin" type="long" />
+		<field name="folioNo" type="String" />
+		<field name="dematNo" type="String" />
+		<field name="investmentType" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="amountTransferred" type="double" />
+		<field name="dateOfEvent" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeInvConsumption">
+		<field name="consumId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="date" type="Date" />
+		<field name="item" type="long" />
+		<field name="invDisplay" type="long" />
+		<field name="quantity" type="float" />
+		<field name="reason" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeInventory">
+		<field name="inventoryId" type="long" />
+		<field name="date" type="Date" />
+		<field name="inventory" type="String" />
+		<field name="item" type="String" />
+		<field name="quantity" type="long" />
+		<field name="currentStockquantity1" type="long" />
+		<field name="currentStockquantity2" type="float" />
+		<field name="itemUnitPrice" type="float" />
+		<field name="OneItemB" type="boolean" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeItemMaster">
+		<field name="itemId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="itemDesc" type="String" />
+		<field name="itemUnits" type="String" />
+		<field name="status" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeQuantityMaster">
+		<field name="itemId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="itemDesc" type="String" />
+		<field name="itemQuantity" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeStockEntry">
+		<field name="stockEntryId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="vendor" type="String" />
+		<field name="item" type="String" />
+		<field name="currentStockQty" type="long" />
+		<field name="quantity" type="long" />
+		<field name="itemUnitPrice" type="float" />
+		<field name="invoiceNo" type="String" />
+		<field name="invoiceDate" type="Date" />
+		<field name="totalAmount" type="float" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeSystemEntry">
+		<field name="liveId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="date" type="Date" />
+		<field name="inventory" type="String" />
+		<field name="item" type="String" />
+		<field name="quantity" type="long" />
+		<field name="currentStockquantity1" type="long" />
+		<field name="currentStockquantity2" type="float" />
+		<field name="itemUnitPrice" type="float" />
+		<field name="OneItemB" type="boolean" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeteriaCouponDetails">
+		<field name="cafId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="date_" type="String" />
+		<field name="emplooyeeName" type="String" />
+		<field name="reqFor" type="String" />
+		<field name="item" type="String" />
+		<field name="itemQuantity" type="long" />
+		<field name="itemValue" type="float" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeteriaCoupons">
+		<field name="couponId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="date" type="String" />
+		<field name="reqFor" type="String" />
+		<field name="itemName" type="String" />
+		<field name="itemQuantity" type="long" />
+		<field name="itemValue" type="float" />
+		<field name="couponNo" type="String" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeVendorMaster">
+		<field name="vendorId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="vendorName" type="String" />
+		<field name="vendorAddress" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="vendorSapId" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.CafeVendorPurchase">
+		<field name="stockEntryId" type="long" />
+		<field name="date" type="Date" />
+		<field name="vendor_id" type="long" />
+		<field name="item_id" type="long" />
+		<field name="invoice_no" type="String" />
+		<field name="qty" type="float" />
+		<field name="unit_price" type="float" />
+		<field name="amount" type="float" />
+	</model>
+	<model name="com.plng.common.schema.model.CafMdpInventory">
+		<field name="mdpInventoryId" type="long" />
+		<field name="date" type="Date" />
+		<field name="ifor" type="long" />
+		<field name="item_id" type="long" />
+		<field name="quantity" type="float" />
+		<field name="unit_price" type="float" />
+	</model>
+	<model name="com.plng.common.schema.model.CafStoreInventory">
+		<field name="storeId" type="long" />
+		<field name="date" type="Date" />
+		<field name="item_id" type="long" />
+		<field name="qty" type="float" />
+	</model>
+	<model name="com.plng.common.schema.model.CanteenInventory">
+		<field name="inventoryId" type="long" />
+		<field name="date" type="Date" />
+		<field name="item_id" type="long" />
+		<field name="quantity" type="float" />
+		<field name="unit_price" type="float" />
+		<field name="time" type="Date" />
+		<field name="status" type="int" />
+		<field name="res_guest" type="boolean" />
+		<field name="hamper" type="boolean" />
+	</model>
+	<model name="com.plng.common.schema.model.CanteenIssue">
+		<field name="canteenIssueId" type="long" />
+		<field name="coupon_id" type="String" />
+		<field name="empid" type="long" />
+		<field name="req_for" type="String" />
+		<field name="item_id" type="long" />
+		<field name="requested_quant" type="float" />
+		<field name="value_quant" type="float" />
+		<field name="created" type="Date" />
+		<field name="issued" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.CarrerRegistration">
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="appId" type="long" />
+		<field name="applicant" type="String" />
+		<field name="applicantFName" type="String" />
+		<field name="applicantMName" type="String" />
+		<field name="applicantLName" type="String" />
+		<field name="applicantDob" type="Date" />
+		<field name="aadharNo" type="String" />
+		<field name="mobileNo" type="String" />
+		<field name="applicantPicFileEntryId" type="long" />
+		<field name="birthCertificateFileEntryId" type="long" />
+		<field name="aadharCertificateFileEntryId" type="long" />
+		<field name="panCardDocFileEntryId" type="long" />
+		<field name="fatherName" type="String" />
+		<field name="gender" type="String" />
+		<field name="emailId" type="String" />
+		<field name="panNo" type="String" />
+		<field name="currentCtc" type="double" />
+		<field name="expectedCtc" type="double" />
+		<field name="category" type="String" />
+		<field name="isPllEmployee" type="String" />
+		<field name="pllEmployeeId" type="String" />
+		<field name="pllEmployeeGrade" type="String" />
+		<field name="isPllEmployeeRelative" type="String" />
+		<field name="pllEmployeeIdRelId" type="String" />
+		<field name="pllEmployeeRel" type="String" />
+		<field name="isBothAddrSame" type="Boolean" />
+		<field name="addrLine1" type="String" />
+		<field name="addrLine2" type="String" />
+		<field name="district" type="String" />
+		<field name="state" type="String" />
+		<field name="pincode" type="long" />
+		<field name="permAddrLine1" type="String" />
+		<field name="permAddrLine2" type="String" />
+		<field name="permDistrict" type="String" />
+		<field name="permState" type="String" />
+		<field name="permPincode" type="long" />
+		<field name="applicationNo" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.CategoryMaster">
+		<field name="categoryId" type="long" />
+		<field name="category" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.CompanyDetails">
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="companyDetailId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="applicationNo" type="long" />
+		<field name="financialYear" type="String" />
+		<field name="companyName" type="String" />
+		<field name="annualTurnover" type="String" />
+		<field name="stockExchange" type="String" />
+		<field name="turnOverDocFileEntryId" type="long" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.CompetitiveExam">
+		<field name="examId" type="long" />
+		<field name="employeeId" type="long" />
+		<field name="employeeName" type="String" />
+		<field name="designation" type="String" />
+		<field name="department" type="String" />
+		<field name="location" type="String" />
+		<field name="acadamicSession" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.ContractLogin">
+		<field name="id" type="long" />
+		<field name="name" type="String" />
+		<field name="employeer" type="String" />
+		<field name="gender" type="String" />
+		<field name="userId" type="long" />
+		<field name="password" type="String" />
+		<field name="endDate" type="Date" />
+		<field name="loc" type="long" />
+		<field name="lrUserId" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.Coupon">
+		<field name="couponId" type="long" />
+		<field name="cid" type="long" />
+		<field name="empid" type="long" />
+		<field name="req_for" type="String" />
+		<field name="item_id" type="long" />
+		<field name="requested_quant" type="float" />
+		<field name="value_quant" type="float" />
+		<field name="month" type="String" />
+		<field name="coupon_id" type="String" />
+		<field name="created" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.CouponStatus">
+		<field name="couponStatusId" type="long" />
+		<field name="empid" type="long" />
+		<field name="cid" type="long" />
+		<field name="month" type="String" />
+		<field name="coupon_id" type="String" />
+		<field name="created" type="Date" />
+		<field name="status" type="String" />
+		<field name="req_for" type="String" />
+		<field name="requested_quant" type="float" />
+		<field name="value_quant" type="float" />
+		<field name="item_id" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.Custodian">
+		<field name="cusId" type="long" />
+		<field name="locationId" type="long" />
+		<field name="custodianName" type="String" />
+		<field name="empId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.DashboardArticles">
+		<field name="articleId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="submittedBy" type="long" />
+		<field name="articleTitle" type="String">
+			<hint name="max-length">250</hint>
+		</field>
+		<field name="articleAuthor" type="String">
+			<hint name="max-length">110</hint>
+		</field>
+		<field name="articleContent" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="status" type="int" />
+		<field name="statusLabel" type="String" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.DepartmentMaster">
+		<field name="departmentId" type="long" />
+		<field name="department" type="String" />
+		<field name="locationId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Departments">
+		<field name="departmentId" type="long" />
+		<field name="department" type="String" />
+		<field name="locationId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.DesignationMaster">
+		<field name="designationId" type="long" />
+		<field name="designation" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.EducationDetails">
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="educationId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="applicationNo" type="long" />
+		<field name="qualification" type="String" />
+		<field name="subject" type="String" />
+		<field name="instituteName" type="String" />
+		<field name="passingMonth" type="String" />
+		<field name="passingYear" type="String" />
+		<field name="jobType" type="String" />
+		<field name="board" type="String" />
+		<field name="cgpa" type="float" />
+		<field name="percentage" type="float" />
+		<field name="educationDocumentFileEntryId" type="long" />
+		<field name="userId" type="long" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.EIC">
+		<field name="eicId" type="long" />
+		<field name="location" type="String" />
+		<field name="eicname" type="String" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.EmployeeDirectory">
+		<field name="employeeId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="employeeName" type="String" />
+		<field name="designation" type="String" />
+		<field name="extentionNumber" type="String" />
+		<field name="directNumber" type="String" />
+		<field name="mobileNumber" type="String" />
+		<field name="alternateNumber" type="String" />
+		<field name="residenceNumber" type="String" />
+		<field name="faxNumber" type="String" />
+		<field name="location" type="String" />
+		<field name="department" type="String" />
+		<field name="bloodGroup" type="String" />
+		<field name="fileEntryId" type="long" />
+		<field name="presentGrade" type="String" />
+		<field name="passportNumber" type="String" />
+		<field name="passportValidity" type="Date" />
+		<field name="anniversary" type="Date" />
+		<field name="uanNumber" type="String" />
+		<field name="aboutMe" type="String" />
+		<field name="fname" type="String" />
+		<field name="mname" type="String" />
+		<field name="lname" type="String" />
+		<field name="dateJoin" type="String" />
+		<field name="dateJoinPGrade" type="String" />
+		<field name="gender" type="String" />
+		<field name="dob" type="String" />
+		<field name="mstatus" type="String" />
+		<field name="email" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+		<field name="position" type="String" />
+		<field name="category" type="String" />
+		<field name="address" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="anniversaryDate" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.ExamFiles">
+		<field name="examFilesId" type="long" />
+		<field name="childName" type="String" />
+		<field name="seletedServices" type="String" />
+		<field name="dateOfselection" type="Date" />
+		<field name="selectionFor" type="String" />
+		<field name="selectionLetter" type="long" />
+		<field name="photo" type="long" />
+		<field name="examId" type="long" />
+		<field name="amount" type="long" />
+		<field name="status" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.FileMovement">
+		<field name="movmentId" type="long" />
+		<field name="bgInitiationUniqueId" type="String" />
+		<field name="sentBy" type="long" />
+		<field name="sentOn" type="Date" />
+		<field name="sentTo" type="long" />
+		<field name="sentByEmpId" type="long" />
+		<field name="sentToEmpID" type="long" />
+		<field name="ackOnDate" type="Date" />
+		<field name="actiontakenDate" type="Date" />
+		<field name="ackOnTime" type="String" />
+		<field name="actionTaken" type="long" />
+		<field name="comments" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="fileseq" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.FileMovementBWS">
+		<field name="movmentId" type="long" />
+		<field name="billInitiationUniqueId" type="String" />
+		<field name="sentBy" type="String" />
+		<field name="sentOn" type="Date" />
+		<field name="sentTo" type="String" />
+		<field name="ackOnDate" type="Date" />
+		<field name="ackOnTime" type="String" />
+		<field name="actionTaken" type="int" />
+		<field name="comments" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="remarks" type="String" />
+		<field name="sentUserId" type="long" />
+		<field name="sentByEmpId" type="long" />
+		<field name="sentToEmpId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="fileSeq" type="int" />
+	</model>
+	<model name="com.plng.common.schema.model.Finance">
+		<field name="financeId" type="long" />
+		<field name="location" type="int" />
+		<field name="channel" type="int" />
+		<field name="empid" type="int" />
+	</model>
+	<model name="com.plng.common.schema.model.Form12bb">
+		<field name="Id" type="long" />
+		<field name="empId" type="int" />
+		<field name="pan" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="fy" type="String" />
+		<field name="rent_landlord" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="name_landlord" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="add_landlord" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="pan_landlord" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="travel" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="pay_lender" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="name_lender" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="add_lender" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="pan_lender" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_1" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_2" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_3" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_4" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_5" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_6" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_7" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="ded_8" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="mob" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="place" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="designation" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="name_father" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="submit" type="Date" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Form16Mail">
+		<field name="id" type="long" />
+		<field name="empId" type="long" />
+		<field name="name" type="String" />
+		<field name="pan" type="String" />
+		<field name="email" type="String">
+			<hint name="max-length">150</hint>
+		</field>
+		<field name="status" type="String" />
+		<field name="fileName" type="String">
+			<hint name="max-length">150</hint>
+		</field>
+	</model>
+	<model name="com.plng.common.schema.model.HolidayCalendar">
+		<field name="holidayId" type="long" />
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="date" type="String" />
+		<field name="day" type="String" />
+		<field name="location" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.InventoryQty">
+		<field name="invQtyId" type="long" />
+		<field name="date" type="Date" />
+		<field name="item_id" type="long" />
+		<field name="qty" type="float" />
+	</model>
+	<model name="com.plng.common.schema.model.KochiEmpHod">
+		<field name="id" type="long" />
+		<field name="empid" type="long" />
+		<field name="hod" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.LocalVehicleRequest">
+		<field name="locVehicleRequestId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="employeeName" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="requestBy" type="long" />
+		<field name="travelDtae" type="Date" />
+		<field name="reportingTime" type="String" />
+		<field name="reportingPlace" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="placesToBeVisited" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="purposeOfTravel" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="oneWayOrReturn" type="String" />
+		<field name="approvalReq" type="boolean" />
+		<field name="remarks" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="location" type="String" />
+		<field name="status" type="int" />
+		<field name="statusLabel" type="String" />
+		<field name="amount" type="String" />
+		<field name="vehilceDetails" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="requestProcessorRemark" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Location">
+		<field name="locationId" type="long" />
+		<field name="location" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.LocationMaster">
+		<field name="locationId" type="long" />
+		<field name="location" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.MaintenanceRequest">
+		<field name="maintenanceRequestId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="employeeName" type="String" />
+		<field name="requestBy" type="long" />
+		<field name="category" type="String" />
+		<field name="requestDetails" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="location" type="String" />
+		<field name="status" type="int" />
+		<field name="statusLabel" type="String" />
+		<field name="amount" type="String" />
+		<field name="requestProcessorRemark" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.MedInsurance">
+		<field name="medInsuranceId" type="long" />
+		<field name="empId" type="long" />
+		<field name="cardNumber" type="String" />
+		<field name="name" type="String" />
+		<field name="DOB" type="Date" />
+		<field name="relation" type="String" />
+		<field name="aadharFile" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="aadharFileEntryId" type="long" />
+		<field name="status" type="String" />
+		<field name="mDate" type="Date" />
+		<field name="bloodgroup" type="String" />
+		<field name="correction" type="String" />
+		<field name="si" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.mobile_issued">
+		<field name="id" type="long" />
+		<field name="empid" type="long" />
+		<field name="makeandModel" type="String" />
+		<field name="issue_date" type="Date" />
+		<field name="serial_no" type="String" />
+		<field name="location" type="String" />
+		<field name="status" type="int" />
+		<field name="file_name" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.Month">
+		<field name="monthId" type="long" />
+		<field name="month" type="String" />
+		<field name="code" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.NPS_Choice">
+		<field name="id" type="long" />
+		<field name="empId" type="int" />
+		<field name="choice" type="int" />
+		<field name="submitted_at" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.NPS_Contribution">
+		<field name="id" type="long" />
+		<field name="empId" type="int" />
+		<field name="choice" type="int" />
+		<field name="amount" type="int" />
+		<field name="pran" type="String" />
+		<field name="fy" type="String" />
+		<field name="submitted_at" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.PollOption">
+		<field name="id" type="long" />
+		<field name="qid" type="long" />
+		<field name="choice" type="String" />
+		<field name="option1" type="long" />
+		<field name="option2" type="long" />
+		<field name="option3" type="long" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.Polls">
+		<field name="id" type="long" />
+		<field name="question" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="choice1" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="choice2" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="choice3" type="String">
+			<hint name="max-length">3000</hint>
+		</field>
+		<field name="submitted_at" type="Date" />
+		<field name="submitted_by" type="String" />
+		<field name="status" type="String" />
+		<field name="created" type="long" />
+		<field name="active" type="long" />
+		<field name="closed" type="long" />
+		<field name="userId" type="long" />
+		<field name="qid" type="long" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.PollSubmittedInfo">
+		<field name="id" type="long" />
+		<field name="qid" type="long" />
+		<field name="choice" type="String" />
+		<field name="userId" type="long" />
+		<field name="submitted" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.PositionMaster">
+		<field name="positionId" type="long" />
+		<field name="position" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.PresidentAward">
+		<field name="precidentAwardId" type="long" />
+		<field name="employeeId" type="long" />
+		<field name="employeeName" type="String" />
+		<field name="designation" type="String" />
+		<field name="department" type="String" />
+		<field name="location" type="String" />
+		<field name="acadamicSession" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.PresidentAwardFiles">
+		<field name="presidentAwardFilesId" type="long" />
+		<field name="childName" type="String" />
+		<field name="awardFor" type="String" />
+		<field name="dateOfAward" type="Date" />
+		<field name="certificate" type="long" />
+		<field name="photo" type="long" />
+		<field name="precidentAwardId" type="long" />
+		<field name="amount" type="long" />
+		<field name="status" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.PressClippings">
+		<field name="pressClippingId" type="long" />
+		<field name="cdate" type="String" />
+		<field name="path" type="String" />
+		<field name="uploaded_at" type="Date" />
+		<field name="uploaded_by" type="long" />
+		<field name="fileEntryId" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.Provision">
+		<field name="id" type="long" />
+		<field name="fy" type="String" />
+		<field name="loc" type="String" />
+		<field name="arch" type="long" />
+		<field name="empid" type="long" />
+		<field name="ccId" type="String" />
+		<field name="dept" type="String" />
+		<field name="vCode" type="String" />
+		<field name="vName" type="String" />
+		<field name="poNo" type="String" />
+		<field name="glCode" type="String" />
+		<field name="glName" type="String" />
+		<field name="glGroup" type="String" />
+		<field name="natureServ" type="String" />
+		<field name="amount" type="float" />
+		<field name="remarks" type="String" />
+		<field name="status" type="long" />
+		<field name="submit" type="Date" />
+		<field name="approver" type="long" />
+		<field name="appSubmit" type="Date" />
+		<field name="provSubMon" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.ProvisionCC">
+		<field name="id" type="long" />
+		<field name="ccId" type="String" />
+		<field name="dept" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.ProvisionGL">
+		<field name="id" type="long" />
+		<field name="glAcc" type="long" />
+		<field name="location" type="String" />
+		<field name="glName" type="String" />
+		<field name="glGroup" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.ReimbursementForm">
+		<field name="reimburseId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="mobileOrLaptop" type="String" />
+		<field name="empId" type="long" />
+		<field name="empName" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="serial_no" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="makeandModel" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="imeiNo" type="String" />
+		<field name="invoiceNo" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="invoiceDate" type="Date" />
+		<field name="vendorName" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="vendorGstn" type="String" />
+		<field name="vendorSap" type="String" />
+		<field name="amount" type="String" />
+		<field name="hr_approved_amt" type="String" />
+		<field name="fileEntryId" type="long" />
+		<field name="file_name" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="location" type="String" />
+		<field name="old_mobile" type="String" />
+		<field name="action" type="int" />
+		<field name="actionbyuserid" type="long" />
+		<field name="actionbyusername" type="String" />
+		<field name="actiondate" type="Date" />
+		<field name="approvedamount" type="String" />
+		<field name="adminremarks" type="String" />
+		<field name="financebyuserid" type="long" />
+		<field name="financebyusername" type="String" />
+		<field name="financeactiondate" type="Date" />
+		<field name="assetTag" type="String" />
+		<field name="dateOfCapitalization" type="Date" />
+		<field name="financeremarks" type="String" />
+		<field name="statusDate" type="Date" />
+		<field name="startDate" type="Date" />
+		<field name="endDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Reporting">
+		<field name="id" type="long" />
+		<field name="empId" type="long" />
+		<field name="sempid" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.RequestProcessor">
+		<field name="RequestProcessorId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="requestType" type="String" />
+		<field name="location" type="String" />
+		<field name="processorEmpId" type="long" />
+		<field name="managerEmpId" type="long" />
+		<field name="processorUserId" type="long" />
+		<field name="managerUserId" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.RestrictHolidays">
+		<field name="restrictHolidayId" type="long" />
+		<field name="restrictHolidayDate" type="String" />
+		<field name="restrictHolidayDay" type="String" />
+		<field name="restrictHolidayDesc" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+	</model>
+	<model name="com.plng.common.schema.model.SaarthiRecord">
+		<field name="recordId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="month" type="String" />
+		<field name="year" type="String" />
+		<field name="totalHoliday" type="String" />
+		<field name="totalExtHrs" type="String" />
+		<field name="totalFood" type="String" />
+		<field name="grandTotal" type="String" />
+		<field name="reportingManager" type="String" />
+		<field name="status" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.SaarthiTimeSheet">
+		<field name="timeSheetId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userId" type="long" />
+		<field name="date" type="String" />
+		<field name="inTime" type="String" />
+		<field name="outTime" type="String" />
+		<field name="totalHrs" type="String" />
+		<field name="purpose" type="String" />
+		<field name="holiday" type="String" />
+		<field name="extHours" type="String" />
+		<field name="breakFast" type="boolean" />
+		<field name="dinner" type="boolean" />
+		<field name="totalHoliday" type="String" />
+		<field name="totalExtHrs" type="String" />
+		<field name="totalFood" type="String" />
+		<field name="grandTotal" type="String" />
+		<field name="reportingManager" type="String" />
+		<field name="month" type="String" />
+		<field name="year" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.SalaryDetails">
+		<field name="userId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="salaryDetailsId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="applicationNo" type="long" />
+		<field name="monthlyBasic" type="String" />
+		<field name="currentCTC" type="String" />
+		<field name="expectedCTC" type="String" />
+		<field name="selfDetails" type="String" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.SamaritanCertificates">
+		<field name="samaritanId" type="long" />
+		<field name="paymentReferenceNo" type="String" />
+		<field name="employeeName" type="String" />
+		<field name="empId" type="String" />
+		<field name="amount" type="long" />
+		<field name="contributionDate" type="Date" />
+		<field name="dataEntered" type="Date" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Sports">
+		<field name="sportsId" type="long" />
+		<field name="employeeId" type="long" />
+		<field name="employeeName" type="String" />
+		<field name="designation" type="String" />
+		<field name="department" type="String" />
+		<field name="location" type="String" />
+		<field name="acadamicSession" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.SportsFiles">
+		<field name="sportsFilesId" type="long" />
+		<field name="childName" type="String" />
+		<field name="eventName" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="dateOfEvent" type="Date" />
+		<field name="nameOfSport" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="representation" type="String" />
+		<field name="certificateFileName" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="certificate" type="long" />
+		<field name="photoFileName" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="photo" type="long" />
+		<field name="sportsId" type="long" />
+		<field name="amount" type="long" />
+		<field name="status" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="createBy" type="long" />
+		<field name="modifiedDate" type="Date" />
+		<field name="modifiedBy" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.State">
+		<field name="stateId" type="long" />
+		<field name="state" type="String" />
+		<field name="code" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.StationaryItems">
+		<field name="stationaryItemId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="description" type="String" />
+		<field name="unit" type="String" />
+		<field name="location" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.StationaryRequest">
+		<field name="stationaryRequestId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="employeeName" type="String" />
+		<field name="requestBy" type="long" />
+		<field name="requirement" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="status" type="int" />
+		<field name="statusLabel" type="String" />
+		<field name="amount" type="String" />
+		<field name="requestProcessorRemark" type="String" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Suggestion">
+		<field name="suggestionId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="employeeName" type="String" />
+		<field name="employeeId" type="long" />
+		<field name="department" type="String" />
+		<field name="location" type="String" />
+		<field name="suggestion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="generatedNo" type="String" />
+		<field name="fileEntryId" type="long" />
+		<field name="attachment" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="ic_comment" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="ic_recv_at" type="Date" />
+		<field name="startDate" type="Date" />
+		<field name="endDate" type="Date" />
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusByRMUserId" type="long" />
+		<field name="statusByRMUserName" type="String" />
+		<field name="RMComment" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="statusBySIUserId" type="long" />
+		<field name="statusBySIUserName" type="String" />
+		<field name="SIAssigness" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="SIComment" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="statusByHODUserId" type="String" />
+		<field name="statusByHODUserName" type="String" />
+		<field name="HODComment" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="statusByPHUserId" type="long" />
+		<field name="statusByPHUserName" type="String" />
+		<field name="PHComment" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.suggestion_box">
+		<field name="id" type="long" />
+		<field name="empid" type="long" />
+		<field name="suggestion" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="attachment" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="status" type="int" />
+		<field name="hod_empid" type="long" />
+		<field name="hod_comment" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="ic_comment" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="code" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="submitted_at" type="Date" />
+		<field name="hod_submitted_at" type="Date" />
+		<field name="ic_recv_at" type="Date" />
+		<field name="departments" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+	</model>
+	<model name="com.plng.common.schema.model.suggestion_department">
+		<field name="id" type="long" />
+		<field name="location" type="String" />
+		<field name="department" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="hod" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.suggestion_review">
+		<field name="id" type="long" />
+		<field name="sid" type="long" />
+		<field name="department" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="comment" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="submitted_at" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.Tax_Choice">
+		<field name="id" type="long" />
+		<field name="empId" type="int" />
+		<field name="choice" type="int" />
+		<field name="fy" type="String" />
+		<field name="submitted_at" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.TDS">
+		<field name="id" type="long" />
+		<field name="empId" type="long" />
+		<field name="name" type="String" />
+		<field name="pan" type="String" />
+		<field name="email" type="String">
+			<hint name="max-length">150</hint>
+		</field>
+		<field name="status" type="String" />
+		<field name="fileName" type="String">
+			<hint name="max-length">150</hint>
+		</field>
+	</model>
+	<model name="com.plng.common.schema.model.TimeSheet">
+		<field name="tsId" type="long" />
+		<field name="empid" type="long" />
+		<field name="date" type="Date" />
+		<field name="in_t" type="String" />
+		<field name="out_t" type="String" />
+		<field name="purpose" type="String" />
+		<field name="claim_amt" type="float" />
+		<field name="ext_hrs" type="float" />
+		<field name="bf" type="boolean" />
+		<field name="dinner" type="boolean" />
+		<field name="status" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.TrainingDetails">
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="trainingId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="applicationNo" type="long" />
+		<field name="courseName" type="String" />
+		<field name="institution" type="String" />
+		<field name="programPeriod" type="String" />
+		<field name="status" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.TSApproval">
+		<field name="tsApprId" type="long" />
+		<field name="empid" type="long" />
+		<field name="supId" type="long" />
+		<field name="mon" type="long" />
+		<field name="year" type="long" />
+		<field name="subDate" type="Date" />
+		<field name="hr" type="long" />
+		<field name="enteredDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.TSReportMan">
+		<field name="tsRepId" type="long" />
+		<field name="empid" type="long" />
+		<field name="supId" type="long" />
+		<field name="mon" type="long" />
+		<field name="year" type="long" />
+		<field name="claim_amt" type="float" />
+		<field name="subDate" type="Date" />
+		<field name="status" type="long" />
+	</model>
+	<model name="com.plng.common.schema.model.Upgrade">
+		<field name="id" type="long" />
+		<field name="emp_no" type="int" />
+		<field name="base_q" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="course_name" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="univ_addr" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="aicte" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="course_duration" type="String" />
+		<field name="tuition" type="String" />
+		<field name="file" type="String">
+			<hint name="max-length">400</hint>
+		</field>
+		<field name="hod" type="long" />
+		<field name="form_type" type="String" />
+		<field name="marks" type="String" />
+		<field name="degree_date" type="Date" />
+		<field name="status" type="int" />
+		<field name="submitted" type="Date" />
+		<field name="approved_by" type="int" />
+		<field name="approved_at" type="Date" />
+		<field name="GSTN" type="String" />
+		<field name="payment_by" type="int" />
+		<field name="payment_at" type="Date" />
+		<field name="assettag" type="String" />
+		<field name="approved_amount" type="String" />
+		<field name="hrhod" type="long" />
+		<field name="hr_approved_by" type="long" />
+		<field name="hr_approved_at" type="Date" />
+		<field name="hrhod_approved_at" type="Date" />
+		<field name="sap_done_by" type="int" />
+		<field name="sap_done_at" type="Date" />
+		<field name="mode" type="String" />
+		<field name="userId" type="long" />
+		<field name="createdBy" type="long" />
+		<field name="assignedTo" type="long" />
+		<field name="assignedBy" type="long" />
+		<field name="emp_name" type="String" />
+		<field name="prof_type" type="String" />
+		<field name="marksheet" type="String" />
+		<field name="degree" type="String" />
+		<field name="submit" type="Date" />
+		<field name="comment" type="String" />
+		<field name="fileId" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.VacancyDetails">
+		<field name="vacancyDetailsId" type="long" />
+		<field name="jobCode" type="String" />
+		<field name="location" type="String" />
+		<field name="title" type="String" />
+		<field name="profileDescription" type="String">
+			<hint name="max-length">10000</hint>
+		</field>
+		<field name="minAge" type="int" />
+		<field name="maxAge" type="int" />
+		<field name="asOnDate" type="Date" />
+		<field name="qualificationJson" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="minExperience" type="int" />
+		<field name="applicationFee" type="float" />
+		<field name="publishDate" type="Date" />
+		<field name="lastDate" type="Date" />
+		<field name="levelOfPosition" type="String" />
+		<field name="status" type="String" />
+		<field name="grade" type="String" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.VendorEvaluation">
+		<field name="vendorEvaluationId" type="long" />
+		<field name="userId" type="long" />
+		<field name="empId" type="long" />
+		<field name="employeeName" type="String" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="submittedBy" type="long" />
+		<field name="submittedByName" type="String" />
+		<field name="typeOfProcurement" type="String" />
+		<field name="name" type="String" />
+		<field name="vendorCode" type="String" />
+		<field name="vendorSapCode" type="String" />
+		<field name="jobLocation" type="String" />
+		<field name="sapPONumber" type="String" />
+		<field name="sapPODate" type="Date" />
+		<field name="itemDescription" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="deliveryStartDate" type="Date" />
+		<field name="deliveryEndDate" type="Date" />
+		<field name="currencyType" type="String" />
+		<field name="finalContractValue" type="String" />
+		<field name="actualDeliveryDate" type="Date" />
+		<field name="reasonForDelay" type="String">
+			<hint name="max-length">5000</hint>
+		</field>
+		<field name="totalMarks" type="String" />
+		<field name="ratingResult" type="String" />
+		<field name="delayCases" type="String" />
+		<field name="delPerfSelect" type="String" />
+		<field name="delPerfRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="delPerFinalMarks" type="String" />
+		<field name="qualPerfOneMarks" type="String" />
+		<field name="qualPerfOneRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="qualPerfTwoSelectValue" type="String" />
+		<field name="qualPerfTwoMarks" type="String" />
+		<field name="qualPerfTwoRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="qualPerfThreeSelectValue" type="String" />
+		<field name="qualPerfThreeMarks" type="String" />
+		<field name="qualPerfThreeRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="qualPerfFinalMarks" type="String" />
+		<field name="reliPerfOneMarks" type="String" />
+		<field name="reliPerfOneRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="reliPerfTwoMarks" type="String" />
+		<field name="reliPerfTwoRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="reliPerfThreeMarks" type="String" />
+		<field name="reliPerfThreeRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="reliPerfFourMarks" type="String" />
+		<field name="reliPerfFourRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="reliPerfFiveMarks" type="String" />
+		<field name="reliPerfFiveRmk" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="reliPerfFinalMarks" type="String" />
+		<field name="range" type="String" />
+		<field name="finalRemarks" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+	</model>
+	<model name="com.plng.common.schema.model.VisitingCardRequest">
+		<field name="visCardRequestId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="employeeName" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="requestBy" type="long" />
+		<field name="nameTobePrint" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="designation" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="emailAddress" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="mobileNumber" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="directNumber" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="extnNumber" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="faxNumber" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="quantity" type="String" />
+		<field name="backSideAddress" type="boolean" />
+		<field name="remarks" type="String">
+			<hint name="max-length">255</hint>
+		</field>
+		<field name="statusLabel" type="String" />
+		<field name="amount" type="String" />
+		<field name="requestProcessorRemark" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="location" type="String" />
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+	</model>
+	<model name="com.plng.common.schema.model.WebNotificationMaster">
+		<field name="webNotificationMasterId" type="long" />
+		<field name="portletName" type="String" />
+		<field name="portletId" type="String" />
+		<field name="portletUrl" type="String" />
+	</model>
+	<model name="com.plng.common.schema.model.Year">
+		<field name="yearId" type="long" />
+		<field name="year" type="String" />
+		<field name="code" type="String" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>
