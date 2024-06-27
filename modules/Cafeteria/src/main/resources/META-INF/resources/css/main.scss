@@ -1,0 +1,47 @@
+
+.error {
+    color: red !important;
+}
+.disableReadOnly{
+    cursor: not-allowed; 
+}
+.coupon-card {
+
+	width: auto;
+	padding: 15px;
+}
+
+#cafe-live-menu-table th, #coupons-generated-today th{
+	    min-width: auto !important;
+}
+
+
+#cafe-live-menu-table td, #coupons-generated-today td{
+	    min-width: auto !important;
+}
+
+
+.coupon-data-div {
+	    max-height: 343px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.coupons-table{
+	max-height: 270px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+ 
+
+.lable-ht {
+	height: 50px;
+}
+
+
+label#rq-error {
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
