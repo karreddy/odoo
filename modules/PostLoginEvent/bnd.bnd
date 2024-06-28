@@ -1,4 +1,0 @@
-Bundle-Name: PostLoginEvent
-Bundle-SymbolicName: PostLoginEvent
-Bundle-Version: 1.0.0
-Export-Package: PostLoginEvent.constants
