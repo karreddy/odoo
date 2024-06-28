@@ -1,0 +1,4 @@
+Bundle-Name: mhcyber-incident-web
+Bundle-SymbolicName: mhcyber.incident.web
+Bundle-Version: 1.0.0
+Export-Package: mhcyber.incident.web.constants

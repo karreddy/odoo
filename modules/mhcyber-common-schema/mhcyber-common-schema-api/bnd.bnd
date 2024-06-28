@@ -1,0 +1,10 @@
+Bundle-Name: mhcyber-common-schema-api
+Bundle-SymbolicName: com.mhcyber.common.schema.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.mhcyber.common.schema.exception,\
+	com.mhcyber.common.schema.model,\
+	com.mhcyber.common.schema.service,\
+	com.mhcyber.common.schema.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../mhcyber-common-schema-service/service.xml

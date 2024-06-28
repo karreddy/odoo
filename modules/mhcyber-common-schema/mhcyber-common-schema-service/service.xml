@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.mhcyber.common.schema">
+	<namespace>mhcCommon</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	
+	<entity local-service="true" name="OTP" remote-service="false">
+		<!-- PK fields -->
+		<column name="otpid" primary="true" type="long" />
+		<!-- Other fields -->
+		<column name="userId" type="long" />
+		<column name="mobile" type="String" />
+		<column name="otpValue" type="String" />
+		<column name="otpType" type="String" />
+		<column name="otpValidated" type="boolean" />
+		
+		<!-- Audit fields -->
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createDate" type="Date" />
+		
+		<finder name="OtpByUserId" return-type="Collection">
+		   <finder-column name="userId"/>
+		</finder>
+		
+		<finder name="OtpByMobileNumber" return-type="OTP">
+		   <finder-column name="mobile"/>
+		    <finder-column name="otpType"/>
+		</finder>
+		
+		<finder name="byMobileNo" return-type="Collection">
+		   <finder-column name="mobile"/>
+		    <finder-column name="createDate" comparator="&gt;="/>
+		</finder>
+					
+	</entity>
+	<entity local-service="true" name="GrievanceDetails" remote-service="false" >
+
+		<!-- PK fields -->
+
+		<column name="grievanceDetailsId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="grievanceType" type="String" />
+
+		<!-- Audit fields -->
+
+		<column name="description" type="String" />
+		<column name="photoEntryId" type="long" />
+		<column name="audioEntryId" type="long" />
+		<column name="videoEntryId" type="long" />
+		<column name="status" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+
+	</entity>
+	<entity local-service="true" name="GrievanceTypeMaster" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="grievanceTypeMasterId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="type" type="String" />
+
+
+	</entity>
+	
+	<entity local-service="true" name="IncidentDetails" remote-service="false" >
+
+		<!-- PK fields -->
+
+		<column name="incidentDetailsId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="incidentTypeId" type="long" />
+		<column name="incidentNumber" type="String" />
+		<column name="description" type="String" />
+		<column name="incidentDate" type="Date" />
+		<column name="affectedSystem" type="String" />
+		<column name="securityLevelId" type="long" />
+		<column name="evidenceEntryId" type="long" />
+		<column name="contactPerson" type="String" />
+		<column name="contactEmail" type="String" />
+		<column name="contactNumber" type="String" />
+		<column name="actionTaken" type="String" />
+		<column name="status" type="long" />
+		<column name="requestForAssistance" type="boolean" />
+		
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+
+	</entity>
+	
+	<entity local-service="true" name="IncedentTypeMaster" remote-service="false">
+
+		<!-- PK fields -->
+		<column name="incedentTypeMasterId" primary="true" type="long" />
+		<column name="type" type="String" />
+		
+	</entity>
+
+	<entity local-service="true" name="SecurityLevelMaster" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="securityLevelMasterId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="name" type="String" />
+	</entity>
+	<entity local-service="true" name="StatusMaster" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="statusMasterId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="status" type="String" />
+
+	</entity>
+</service-builder>
