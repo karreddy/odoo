@@ -1,4 +1,0 @@
-Bundle-Name: mhcyber.liferay.configurations.web
-Bundle-SymbolicName: mhcyber.liferay.configurations.web
-Bundle-Version: 1.0.0
-Export-Package: mhcyber.liferay.configurations.web.api

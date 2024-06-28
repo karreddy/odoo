@@ -1,4 +1,0 @@
-Bundle-Name: mhcyber-grievance-web
-Bundle-SymbolicName: com.mhcyber.grievance
-Bundle-Version: 1.0.0
-Export-Package: com.mhcyber.grievance.constants

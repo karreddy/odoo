@@ -1,4 +1,0 @@
-Bundle-Name: mhcyber.common.api
-Bundle-SymbolicName: mhcyber.common.api
-Bundle-Version: 1.0.0
-Export-Package: mhcyber.common.api.api

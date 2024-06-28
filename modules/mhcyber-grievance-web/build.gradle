@@ -1,5 +1,0 @@
-dependencies {
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
-	compile project(":modules:mhcyber-common-schema:mhcyber-common-schema-api")
-	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
-}
